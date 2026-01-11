@@ -1,6 +1,6 @@
 # Generates a registration token for the Host Pool
 resource "azurerm_virtual_desktop_host_pool_registration_info" "token" {
-  host_pool_id    = azurerm_virtual_desktop_host_pool.hp.id
+  hostpool_id    = azurerm_virtual_desktop_host_pool.hp.id
   expiration_date = timeadd(timestamp(), "2h")
 }
 
@@ -24,7 +24,7 @@ resource "azurerm_windows_virtual_machine" "vm" {
   name                  = "vm-sh-${count.index}"
   resource_group_name   = azurerm_resource_group.rg.name
   location              = azurerm_resource_group.rg.location
-  size                  = "Standard_B2s"
+  size                  = "Standard_D2s_v3"
   network_interface_ids = [azurerm_network_interface.nic[count.index].id]
   admin_username        = var.admin_username
   admin_password        = var.admin_password

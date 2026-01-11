@@ -1,0 +1,665 @@
+{
+  "version": 4,
+  "terraform_version": "1.5.7",
+  "serial": 83,
+  "lineage": "9ec34e6b-d836-4722-1877-376cd2f3696d",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "data",
+      "type": "azuread_client_config",
+      "name": "current",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azuread\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "client_id": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+            "id": "0a5579f5-3192-4648-b3e9-0a1e340ecab8-04b07795-8ddb-461a-bbee-02f9e1bf7b46-949b647f-ff58-4ae1-93ee-d42d2540970a",
+            "object_id": "949b647f-ff58-4ae1-93ee-d42d2540970a",
+            "tenant_id": "0a5579f5-3192-4648-b3e9-0a1e340ecab8",
+            "timeouts": null
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "azurerm_client_config",
+      "name": "current",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "client_id": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+            "id": "Y2xpZW50Q29uZmlncy9jbGllbnRJZD0wNGIwNzc5NS04ZGRiLTQ2MWEtYmJlZS0wMmY5ZTFiZjdiNDY7b2JqZWN0SWQ9OTQ5YjY0N2YtZmY1OC00YWUxLTkzZWUtZDQyZDI1NDA5NzBhO3N1YnNjcmlwdGlvbklkPTIyNzM3MDcwLTcxZDctNDFlYS1hZjQyLTI2Mjg1ZmY4MTA5NDt0ZW5hbnRJZD0wYTU1NzlmNS0zMTkyLTQ2NDgtYjNlOS0wYTFlMzQwZWNhYjg=",
+            "object_id": "949b647f-ff58-4ae1-93ee-d42d2540970a",
+            "subscription_id": "22737070-71d7-41ea-af42-26285ff81094",
+            "tenant_id": "0a5579f5-3192-4648-b3e9-0a1e340ecab8",
+            "timeouts": null
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azuread_group",
+      "name": "avd_users",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azuread\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "administrative_unit_ids": [],
+            "assignable_to_role": false,
+            "auto_subscribe_new_members": false,
+            "behaviors": [],
+            "description": "",
+            "display_name": "AVD-Users",
+            "dynamic_membership": [],
+            "external_senders_allowed": false,
+            "hide_from_address_lists": false,
+            "hide_from_outlook_clients": false,
+            "id": "7c30fc6a-f35a-468f-b017-3684f0182225",
+            "mail": "",
+            "mail_enabled": false,
+            "mail_nickname": "5c2811cf-1",
+            "members": [
+              "14eecc8e-2831-4c04-bf4b-bbeac752f662",
+              "16abb592-1cdf-4065-8639-881f51f288f2"
+            ],
+            "object_id": "7c30fc6a-f35a-468f-b017-3684f0182225",
+            "onpremises_domain_name": "",
+            "onpremises_group_type": "",
+            "onpremises_netbios_name": "",
+            "onpremises_sam_account_name": "",
+            "onpremises_security_identifier": "",
+            "onpremises_sync_enabled": false,
+            "owners": [
+              "949b647f-ff58-4ae1-93ee-d42d2540970a"
+            ],
+            "preferred_language": "",
+            "prevent_duplicate_names": false,
+            "provisioning_options": [],
+            "proxy_addresses": [],
+            "security_enabled": true,
+            "theme": "",
+            "timeouts": null,
+            "types": [],
+            "visibility": "",
+            "writeback_enabled": false
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjMwMDAwMDAwMDAwMCwicmVhZCI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjEyMDAwMDAwMDAwMDB9fQ=="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azuread_group_member",
+      "name": "user1_assignment",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azuread\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "group_object_id": "7c30fc6a-f35a-468f-b017-3684f0182225",
+            "id": "7c30fc6a-f35a-468f-b017-3684f0182225/member/14eecc8e-2831-4c04-bf4b-bbeac752f662",
+            "member_object_id": "14eecc8e-2831-4c04-bf4b-bbeac752f662",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJyZWFkIjozMDAwMDAwMDAwMDB9fQ==",
+          "dependencies": [
+            "azuread_group.avd_users",
+            "azuread_user.lab_user1"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azuread_group_member",
+      "name": "user2_assignment",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azuread\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "group_object_id": "7c30fc6a-f35a-468f-b017-3684f0182225",
+            "id": "7c30fc6a-f35a-468f-b017-3684f0182225/member/16abb592-1cdf-4065-8639-881f51f288f2",
+            "member_object_id": "16abb592-1cdf-4065-8639-881f51f288f2",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJyZWFkIjozMDAwMDAwMDAwMDB9fQ==",
+          "dependencies": [
+            "azuread_group.avd_users",
+            "azuread_user.lab_user2"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azuread_user",
+      "name": "lab_user1",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azuread\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "about_me": "",
+            "account_enabled": true,
+            "age_group": "",
+            "business_phones": [],
+            "city": "",
+            "company_name": "",
+            "consent_provided_for_minor": "",
+            "cost_center": "",
+            "country": "",
+            "creation_type": "",
+            "department": "",
+            "disable_password_expiration": false,
+            "disable_strong_password": false,
+            "display_name": "Lab User 1",
+            "division": "",
+            "employee_id": "",
+            "employee_type": "",
+            "external_user_state": "",
+            "fax_number": "",
+            "force_password_change": true,
+            "given_name": "",
+            "id": "14eecc8e-2831-4c04-bf4b-bbeac752f662",
+            "im_addresses": [],
+            "job_title": "",
+            "mail": "",
+            "mail_nickname": "lab-user1",
+            "manager_id": "",
+            "mobile_phone": "",
+            "object_id": "14eecc8e-2831-4c04-bf4b-bbeac752f662",
+            "office_location": "",
+            "onpremises_distinguished_name": "",
+            "onpremises_domain_name": "",
+            "onpremises_immutable_id": "",
+            "onpremises_sam_account_name": "",
+            "onpremises_security_identifier": "",
+            "onpremises_sync_enabled": false,
+            "onpremises_user_principal_name": "",
+            "other_mails": [],
+            "password": "TempPass123!@#",
+            "postal_code": "",
+            "preferred_language": "",
+            "proxy_addresses": [],
+            "show_in_address_list": true,
+            "state": "",
+            "street_address": "",
+            "surname": "",
+            "timeouts": null,
+            "usage_location": "",
+            "user_principal_name": "lab-user1@juntosvamosalem.onmicrosoft.com",
+            "user_type": "Member"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJyZWFkIjozMDAwMDAwMDAwMDAsInVwZGF0ZSI6MzAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azuread_user",
+      "name": "lab_user2",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azuread\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "about_me": "",
+            "account_enabled": true,
+            "age_group": "",
+            "business_phones": [],
+            "city": "",
+            "company_name": "",
+            "consent_provided_for_minor": "",
+            "cost_center": "",
+            "country": "",
+            "creation_type": "",
+            "department": "",
+            "disable_password_expiration": false,
+            "disable_strong_password": false,
+            "display_name": "Lab User 2",
+            "division": "",
+            "employee_id": "",
+            "employee_type": "",
+            "external_user_state": "",
+            "fax_number": "",
+            "force_password_change": true,
+            "given_name": "",
+            "id": "16abb592-1cdf-4065-8639-881f51f288f2",
+            "im_addresses": [],
+            "job_title": "",
+            "mail": "",
+            "mail_nickname": "lab-user2",
+            "manager_id": "",
+            "mobile_phone": "",
+            "object_id": "16abb592-1cdf-4065-8639-881f51f288f2",
+            "office_location": "",
+            "onpremises_distinguished_name": "",
+            "onpremises_domain_name": "",
+            "onpremises_immutable_id": "",
+            "onpremises_sam_account_name": "",
+            "onpremises_security_identifier": "",
+            "onpremises_sync_enabled": false,
+            "onpremises_user_principal_name": "",
+            "other_mails": [],
+            "password": "TempPass123!@#",
+            "postal_code": "",
+            "preferred_language": "",
+            "proxy_addresses": [],
+            "show_in_address_list": true,
+            "state": "",
+            "street_address": "",
+            "surname": "",
+            "timeouts": null,
+            "usage_location": "",
+            "user_principal_name": "lab-user2@juntosvamosalem.onmicrosoft.com",
+            "user_type": "Member"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJyZWFkIjozMDAwMDAwMDAwMDAsInVwZGF0ZSI6MzAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_network_interface",
+      "name": "nic",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "accelerated_networking_enabled": false,
+            "applied_dns_servers": [],
+            "auxiliary_mode": "",
+            "auxiliary_sku": "",
+            "dns_servers": [],
+            "edge_zone": "",
+            "enable_accelerated_networking": false,
+            "enable_ip_forwarding": false,
+            "id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.Network/networkInterfaces/nic-sh-0",
+            "internal_dns_name_label": "",
+            "internal_domain_name_suffix": "jjzsrfn15boezft4rjtkrva5tc.zx.internal.cloudapp.net",
+            "ip_configuration": [
+              {
+                "gateway_load_balancer_frontend_ip_configuration_id": "",
+                "name": "internal",
+                "primary": true,
+                "private_ip_address": "10.0.1.4",
+                "private_ip_address_allocation": "Dynamic",
+                "private_ip_address_version": "IPv4",
+                "public_ip_address_id": "",
+                "subnet_id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.Network/virtualNetworks/vnet-avd-lab-01/subnets/snet-avd-lab-01-hosts"
+              }
+            ],
+            "ip_forwarding_enabled": false,
+            "location": "uksouth",
+            "mac_address": "",
+            "name": "nic-sh-0",
+            "private_ip_address": "10.0.1.4",
+            "private_ip_addresses": [
+              "10.0.1.4"
+            ],
+            "resource_group_name": "rg-avd-lab-01",
+            "tags": null,
+            "timeouts": null,
+            "virtual_machine_id": ""
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.rg",
+            "azurerm_subnet.snet_hosts",
+            "azurerm_virtual_network.vnet"
+          ]
+        },
+        {
+          "index_key": 1,
+          "schema_version": 0,
+          "attributes": {
+            "accelerated_networking_enabled": false,
+            "applied_dns_servers": [],
+            "auxiliary_mode": "",
+            "auxiliary_sku": "",
+            "dns_servers": [],
+            "edge_zone": "",
+            "enable_accelerated_networking": false,
+            "enable_ip_forwarding": false,
+            "id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.Network/networkInterfaces/nic-sh-1",
+            "internal_dns_name_label": "",
+            "internal_domain_name_suffix": "jjzsrfn15boezft4rjtkrva5tc.zx.internal.cloudapp.net",
+            "ip_configuration": [
+              {
+                "gateway_load_balancer_frontend_ip_configuration_id": "",
+                "name": "internal",
+                "primary": true,
+                "private_ip_address": "10.0.1.5",
+                "private_ip_address_allocation": "Dynamic",
+                "private_ip_address_version": "IPv4",
+                "public_ip_address_id": "",
+                "subnet_id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.Network/virtualNetworks/vnet-avd-lab-01/subnets/snet-avd-lab-01-hosts"
+              }
+            ],
+            "ip_forwarding_enabled": false,
+            "location": "uksouth",
+            "mac_address": "",
+            "name": "nic-sh-1",
+            "private_ip_address": "10.0.1.5",
+            "private_ip_addresses": [
+              "10.0.1.5"
+            ],
+            "resource_group_name": "rg-avd-lab-01",
+            "tags": null,
+            "timeouts": null,
+            "virtual_machine_id": ""
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.rg",
+            "azurerm_subnet.snet_hosts",
+            "azurerm_virtual_network.vnet"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "rg",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01",
+            "location": "uksouth",
+            "managed_by": "",
+            "name": "rg-avd-lab-01",
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_role_assignment",
+      "name": "dag_access",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "condition": "",
+            "condition_version": "",
+            "delegated_managed_identity_resource_id": "",
+            "description": "",
+            "id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.DesktopVirtualization/applicationGroups/dag-lab-desktop/providers/Microsoft.Authorization/roleAssignments/0390fb07-956b-4a3e-df95-19973994c177",
+            "name": "0390fb07-956b-4a3e-df95-19973994c177",
+            "principal_id": "7c30fc6a-f35a-468f-b017-3684f0182225",
+            "principal_type": "Group",
+            "role_definition_id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/providers/Microsoft.Authorization/roleDefinitions/1d18fff3-a72a-46b5-b4a9-0b38a3cd7e63",
+            "role_definition_name": "Desktop Virtualization User",
+            "scope": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.DesktopVirtualization/applicationGroups/dag-lab-desktop",
+            "skip_service_principal_aad_check": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "azuread_group.avd_users",
+            "azurerm_resource_group.rg",
+            "azurerm_virtual_desktop_application_group.dag",
+            "azurerm_virtual_desktop_host_pool.hp"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_subnet",
+      "name": "snet_hosts",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "address_prefixes": [
+              "10.0.1.0/24"
+            ],
+            "default_outbound_access_enabled": true,
+            "delegation": [],
+            "enforce_private_link_endpoint_network_policies": false,
+            "enforce_private_link_service_network_policies": false,
+            "id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.Network/virtualNetworks/vnet-avd-lab-01/subnets/snet-avd-lab-01-hosts",
+            "name": "snet-avd-lab-01-hosts",
+            "private_endpoint_network_policies": "Enabled",
+            "private_endpoint_network_policies_enabled": true,
+            "private_link_service_network_policies_enabled": true,
+            "resource_group_name": "rg-avd-lab-01",
+            "service_endpoint_policy_ids": null,
+            "service_endpoints": null,
+            "timeouts": null,
+            "virtual_network_name": "vnet-avd-lab-01"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.rg",
+            "azurerm_virtual_network.vnet"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_virtual_desktop_application_group",
+      "name": "dag",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "default_desktop_display_name": "",
+            "description": "",
+            "friendly_name": "Lab Desktop",
+            "host_pool_id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.DesktopVirtualization/hostPools/hp-lab-pooled",
+            "id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.DesktopVirtualization/applicationGroups/dag-lab-desktop",
+            "location": "uksouth",
+            "name": "dag-lab-desktop",
+            "resource_group_name": "rg-avd-lab-01",
+            "tags": null,
+            "timeouts": null,
+            "type": "Desktop"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjozNjAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIxIn0=",
+          "dependencies": [
+            "azurerm_resource_group.rg",
+            "azurerm_virtual_desktop_host_pool.hp"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_virtual_desktop_host_pool",
+      "name": "hp",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "custom_rdp_properties": "targetisaadjoined:i:1;drivestoredirect:s:*;audiomode:i:0;videoplaybackmode:i:1;redirectclipboard:i:1;redirectprinters:i:1;devicestoredirect:s:*;redirectcomports:i:1;redirectsmartcards:i:1;usbdevicestoredirect:s:*;enablecredsspsupport:i:1;use multimon:i:1;",
+            "description": "",
+            "friendly_name": "",
+            "id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.DesktopVirtualization/hostPools/hp-lab-pooled",
+            "load_balancer_type": "BreadthFirst",
+            "location": "uksouth",
+            "maximum_sessions_allowed": 999999,
+            "name": "hp-lab-pooled",
+            "personal_desktop_assignment_type": "",
+            "preferred_app_group_type": "Desktop",
+            "public_network_access": "Enabled",
+            "resource_group_name": "rg-avd-lab-01",
+            "scheduled_agent_updates": [],
+            "start_vm_on_connect": true,
+            "tags": null,
+            "timeouts": null,
+            "type": "Pooled",
+            "validate_environment": false,
+            "vm_template": ""
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjozNjAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIxIn0=",
+          "dependencies": [
+            "azurerm_resource_group.rg"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_virtual_desktop_host_pool_registration_info",
+      "name": "token",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "expiration_date": "2026-01-11T16:45:00Z",
+            "hostpool_id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.DesktopVirtualization/hostPools/hp-lab-pooled",
+            "id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.DesktopVirtualization/hostPools/hp-lab-pooled/registrationInfo/default",
+            "timeouts": null,
+            "token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjlBMzhFMjdGNkQyMDU5QTU4QjU0RTFCQ0IzQ0ZBRjQxRjJFOTIzODEiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6ImRhODg5MWMzLWU0N2YtNDI2ZS1hYTg4LWQ3Y2U0OGM0NTYwNSIsIkJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXItZy1nYi1yMS53dmQubWljcm9zb2Z0LmNvbS8iLCJEaWFnbm9zdGljc1VyaSI6Imh0dHBzOi8vcmRkaWFnbm9zdGljcy1nLWdiLXIxLnd2ZC5taWNyb3NvZnQuY29tLyIsIkVuZHBvaW50UG9vbElkIjoiNTExNGM3NDctOTkyZC00NmU5LTkxM2YtNTFiZWJiYzM0ZTQ3IiwiR2xvYmFsQnJva2VyVXJpIjoiaHR0cHM6Ly9yZGJyb2tlci53dmQubWljcm9zb2Z0LmNvbS8iLCJHZW9ncmFwaHkiOiJHQiIsIkdsb2JhbEJyb2tlclJlc291cmNlSWRVcmkiOiJodHRwczovLzUxMTRjNzQ3LTk5MmQtNDZlOS05MTNmLTUxYmViYmMzNGU0Ny5yZGJyb2tlci53dmQubWljcm9zb2Z0LmNvbS8iLCJCcm9rZXJSZXNvdXJjZUlkVXJpIjoiaHR0cHM6Ly81MTE0Yzc0Ny05OTJkLTQ2ZTktOTEzZi01MWJlYmJjMzRlNDcucmRicm9rZXItZy1nYi1yMS53dmQubWljcm9zb2Z0LmNvbS8iLCJEaWFnbm9zdGljc1Jlc291cmNlSWRVcmkiOiJodHRwczovLzUxMTRjNzQ3LTk5MmQtNDZlOS05MTNmLTUxYmViYmMzNGU0Ny5yZGRpYWdub3N0aWNzLWctZ2ItcjEud3ZkLm1pY3Jvc29mdC5jb20vIiwiQUFEVGVuYW50SWQiOiIwYTU1NzlmNS0zMTkyLTQ2NDgtYjNlOS0wYTFlMzQwZWNhYjgiLCJuYmYiOjE3NjgxNDI3MDEsImV4cCI6MTc2ODE0OTkwMCwiaXNzIjoiUkRJbmZyYVRva2VuTWFuYWdlciIsImF1ZCI6IlJEbWkifQ.ZNxYEURT7s1fi74opfC8Pfzu8RBhomUkIeUvyKGv8lEPktK4Fvx-mWZAfFJ7OFnDa4cAuihQnSxCtHKezYhzC42anDzqPOovlvNEuo431HM2z8KeqfDd_V7xymzVIXbcHMAtG1Xz9a_YRN_QVMOwzOdZryuq39CugLep0p0Y3QeWGC4i_g65HdCwTIWbs8STo7EHP-VOpK22saGRQKLl7asbWfcZp-MOtAQnTePlMD3zdidF2AIYrYPDdtLU5rDkAU6z1MzFuD_9MrRpBQNA3sM1FkM6Q3JsZxTs24azBWw0N0pcyUvdTXVbFELWnZDIUwEZToe-5AM634Nb1ooqTQ"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.rg",
+            "azurerm_virtual_desktop_host_pool.hp"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_virtual_desktop_workspace",
+      "name": "ws",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "description": "",
+            "friendly_name": "Enterprise VDI Lab",
+            "id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.DesktopVirtualization/workspaces/ws-lab-vdi",
+            "location": "uksouth",
+            "name": "ws-lab-vdi",
+            "public_network_access_enabled": true,
+            "resource_group_name": "rg-avd-lab-01",
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjozNjAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIxIn0=",
+          "dependencies": [
+            "azurerm_resource_group.rg"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_virtual_desktop_workspace_application_group_association",
+      "name": "ws_dag",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "application_group_id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.DesktopVirtualization/applicationGroups/dag-lab-desktop",
+            "id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.DesktopVirtualization/workspaces/ws-lab-vdi|/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.DesktopVirtualization/applicationGroups/dag-lab-desktop",
+            "timeouts": null,
+            "workspace_id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.DesktopVirtualization/workspaces/ws-lab-vdi"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "azurerm_resource_group.rg",
+            "azurerm_virtual_desktop_application_group.dag",
+            "azurerm_virtual_desktop_host_pool.hp",
+            "azurerm_virtual_desktop_workspace.ws"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_virtual_machine_extension",
+      "name": "aad_join",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": []
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_virtual_machine_extension",
+      "name": "avd_agent",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": []
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_virtual_network",
+      "name": "vnet",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "address_space": [
+              "10.0.0.0/16"
+            ],
+            "bgp_community": "",
+            "ddos_protection_plan": [],
+            "dns_servers": [],
+            "edge_zone": "",
+            "encryption": [],
+            "flow_timeout_in_minutes": 0,
+            "guid": "9528734a-f8bb-4c5c-967e-8a66a8d41f9a",
+            "id": "/subscriptions/22737070-71d7-41ea-af42-26285ff81094/resourceGroups/rg-avd-lab-01/providers/Microsoft.Network/virtualNetworks/vnet-avd-lab-01",
+            "location": "uksouth",
+            "name": "vnet-avd-lab-01",
+            "resource_group_name": "rg-avd-lab-01",
+            "subnet": [],
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.rg"
+          ]
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
