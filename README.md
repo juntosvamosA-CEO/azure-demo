@@ -1,10 +1,13 @@
 # Enterprise VDI Lab on Azure
-**Author:** Luiz Paulo
+**Author:** Luiz Paulo Estevez Todeschini
 
 ## Overview
 This project simulates a **modern enterprise VDI environment** designed for high-security operations (such as a Contact Center or Secure Access Workstation scenario). It implements a **Cloud-First** architecture using **Azure Virtual Desktop (AVD)**, centrally managed identity via **Microsoft Entra ID**, and enforced **Multi-Factor Authentication (MFA)**.
 
 The lab demonstrates how to deploy a scalable, pooled, non-persistent desktop environment using Infrastructure as Code (Terraform), ensuring consistency and rapid recovery.
+
+##Purpose
+This project is a personal, non-production lab that reconstructs a simplified version of an enterprise Azure Virtual Desktop environment inspired by large-scale operations (e.g., TP), built for learning, documentation, and portfolio demonstration.
 
 ## Architecture
 
@@ -99,4 +102,4 @@ For a production-grade evolution of this lab, the following enhancements are rec
 
 ## About the Author
 
-**Luiz Paulo** is a Cloud & VDI Operations professional with extensive experience in designing and managing critical infrastructure in global environments (Greece/Brazil). This project showcases his approach to modern, secure, and automated desktop virtualization on Azure.
+
