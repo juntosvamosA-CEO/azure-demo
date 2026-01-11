@@ -2,12 +2,17 @@
 **Author:** Luiz Paulo Estevez Todeschini
 
 ## Overview
-This project simulates a **modern enterprise VDI environment** designed for high-security operations (such as a Contact Center or Secure Access Workstation scenario). It implements a **Cloud-First** architecture using **Azure Virtual Desktop (AVD)**, centrally managed identity via **Microsoft Entra ID**, and enforced **Multi-Factor Authentication (MFA)**.
+This project is a personal, non-production lab designed to reconstruct a simplified version of a modern enterprise Virtual Desktop Infrastructure (VDI) environment using Microsoft Azure.
 
-The lab demonstrates how to deploy a scalable, pooled, non-persistent desktop environment using Infrastructure as Code (Terraform), ensuring consistency and rapid recovery.
+The lab simulates a cloud-first, identity-centric workspace commonly found in large-scale operations such as contact centers or secure access workstation scenarios. It leverages Azure Virtual Desktop (AVD), Microsoft Entra ID for centralized identity management, and enforced Multi-Factor Authentication (MFA).
 
-##Purpose
-This project is a personal, non-production lab that reconstructs a simplified version of an enterprise Azure Virtual Desktop environment inspired by large-scale operations (e.g., TP), built for learning, documentation, and portfolio demonstration.
+The environment is deployed using Infrastructure as Code (Terraform), focusing on consistency, repeatability, and architectural clarity rather than production completeness.
+
+**Purpose**
+
+The purpose of this project is educational and demonstrative. It aims to document architectural decisions, security trade-offs, and operational patterns commonly used in enterprise VDI environments, while remaining intentionally simplified for lab and portfolio use.
+
+This project is not intended for production deployment.
 
 ## Architecture
 
@@ -98,6 +103,16 @@ For a production-grade evolution of this lab, the following enhancements are rec
 - **FSLogix Profile Containers**: Store user profiles on Azure Files to provide a seamless "roaming" experience in non-persistent pools.
 - **Secure Egress**: Route all internet traffic through **Azure Firewall** in a Hub VNet to filter malicious content.
 - **Endpoint Security**: Deploy **Microsoft Defender for Endpoint** to session hosts for EDR capabilities.
+
+**Intentional Limitations**
+The following elements are intentionally out of scope for this lab:
+
+-On-premises or hybrid Active Directory
+-Full hub-spoke networking with Azure Firewall
+-SIEM and centralized security monitoring
+-Automated scaling plans
+
+Advanced image lifecycle pipelines
 - **Image Management**: Use **Azure Compute Gallery** to maintain hardened "Golden Images" with pre-installed business applications.
 
 ## About the Author
